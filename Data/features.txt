@@ -1,0 +1,20 @@
+Temperatura
+Anemia
+Stopień krwawienia
+Miejsce krwawienia
+Bolą kości
+Wrażliwość mostka
+Powiększenie węzłów chłonnych
+Powiększenie wątroby i śledziony
+Centralny układ nerwowy (ból głowy/wymioty/drgawki/senność/śpiączka)
+Powiększenie jąder
+Uszkodzenie w (sercu/płucach/nerce)
+Gałka oczna (zaburzenia w widzeniu/krwawienie siatkówki/wytrzeszcz oczu)
+Poziom WBC (leukocytów)
+Obniżenie liczby RBC (erytrocytów)
+Liczba płytek krwawienia
+Niedojrzałość komórki (blasyczna)
+Stan pobudzenia szpiku
+Główne komórki w szpiku
+Poziom limfocytów
+Reakcja
