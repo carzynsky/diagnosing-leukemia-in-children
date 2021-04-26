@@ -24,7 +24,3 @@ def load_data_from_files(data_path, features):
     list = np.arange(len(y))
     Y = pd.DataFrame([y], columns=list)
     return (X,Y)
-    # for i in range(len(Y)):
-    #     Y[i] = y[i]
-    # print(Y)
-    # Y = pd.DataFrame(y) 

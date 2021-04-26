@@ -35,3 +35,9 @@ def create_feature_ranking(X, y):
     result.sort_values(by=['chi'], ascending=False, inplace=True)
 
     return result
+
+def create_feature_ranking_from_given_file(k):
+    f = pd.read_excel('Data/bestFeatures.xls')
+    f = f.sort_values(by=['chi'], ascending=False)
+    best_features_arr = f['cecha'].values
+    return best_features_arr[:k]

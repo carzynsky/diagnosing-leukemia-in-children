@@ -17,4 +17,6 @@ features = load_data.load_features(features_path)
 ranking = select_features.create_feature_ranking(X, y)
 
 # cross_validation
-score = cross_validation.run_crossvalid(X, y, 10, 1)
+score = cross_validation.run_crossvalid(X, y, 12, 256, 1)
+print('Score: ', score)
+
