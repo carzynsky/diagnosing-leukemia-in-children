@@ -17,6 +17,14 @@ features = load_data.load_features(features_path)
 ranking = select_features.create_feature_ranking(X, y)
 
 # cross_validation
-score = cross_validation.run_crossvalid(X, y, 12, 256, 1)
-print('Score: ', score)
+k_best_features = 15
+neurons_in_hidden_layer = 256
+scores = cross_validation.run_crossvalid(X, y, k_best_features, neurons_in_hidden_layer)
+print('Scores: ', scores)
+
+average=0
+if(len(scores)!=0):
+    average = sum(scores) / len(scores)
+
+print('Average: ', average)
 
