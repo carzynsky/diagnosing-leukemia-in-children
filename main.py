@@ -2,8 +2,6 @@ import load_data
 import select_features
 import cross_validation
 
-no_of_crossvalid_runs = 2
-no_of_folds = 5
 data_path = 'Data/białaczka.XLS'
 features_path = 'Data/features.txt'
 
