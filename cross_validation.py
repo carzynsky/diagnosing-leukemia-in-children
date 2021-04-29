@@ -4,7 +4,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 
-def run_crossvalid(X, y, k_best_features, neurons_in_hidden_layer):
+def run_crossvalid(X, y, k_best_features, neurons_in_hidden_layer, momentum_param):
 
     best_features_columns = select_features.create_feature_ranking_from_given_file(k_best_features)
     X = X[best_features_columns]
@@ -12,7 +12,7 @@ def run_crossvalid(X, y, k_best_features, neurons_in_hidden_layer):
     X = X.values
     y = y.values[0]
 
-    clf = MLPClassifier(hidden_layer_sizes=(neurons_in_hidden_layer),random_state=1234, solver='lbfgs', max_iter=400)
+    clf = MLPClassifier(hidden_layer_sizes=(neurons_in_hidden_layer),random_state=1234, momentum=momentum_param, solver='sgd', max_iter=4000)
     rkf = RepeatedKFold(n_splits=2, n_repeats=5, random_state=1234)
     for train_index, test_index in rkf.split(X):
         X_train, X_test = X[train_index], X[test_index]
