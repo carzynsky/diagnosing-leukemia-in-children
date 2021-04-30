@@ -12,7 +12,7 @@ def run_statistical_analysis(X, y):
         'MLP_15F_32N_0M':  cross_validation.run_crossvalid(X, y, 15, 32, 0),
         'MLP_15F_32N_09M':  cross_validation.run_crossvalid(X, y, 15, 32, 0.9),
         'MLP_15F_64N_0M':  cross_validation.run_crossvalid(X, y, 15, 64, 0),
-        'MLP_15F_624_09M':  cross_validation.run_crossvalid(X, y, 15, 64, 0.9),
+        'MLP_15F_64N_09M':  cross_validation.run_crossvalid(X, y, 15, 64, 0.9),
         'MLP_15F_256N_0M':  cross_validation.run_crossvalid(X, y, 15, 256, 0),
         'MLP_15F_256N_09M':  cross_validation.run_crossvalid(X, y, 15, 256, 0.9)
     }
